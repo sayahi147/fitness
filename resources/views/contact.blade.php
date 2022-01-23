@@ -71,15 +71,15 @@
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="index.html">Fit<span>ness</span></a></h1>
+						<h1 id="fh5co-logo"><a href="{{ url('/') }}">Fit<span>ness</span></a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
-									<a href="index.html">Home</a>
+									<a href="{{ url('/') }}">Home</a>
 								</li>
 								<li>
-									<a href="classes.html" class="fh5co-sub-ddown">Classes</a>
+									<a href="{{ url('/classes') }}"> class="fh5co-sub-ddown">Classes</a>
 									 <ul class="fh5co-sub-menu">
 									 	<li><a href="left-sidebar.html">Web Development</a></li>
 									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
@@ -100,11 +100,14 @@
 									</ul>
 								</li>
 								<li>
-									<a href="schedule.html">Schedule</a>
+									<a href="{{ url('/schedule') }}">Schedule</a>
 								</li>
-								<li><a href="trainer.html">Trainers</a></li>
-								<li><a href="about.html">About</a></li>
-								<li class="active"><a href="contact.html">Contact</a></li>
+								<li><a href="{{ url('/trainers') }}">Trainers</a></li>
+								<li><a href="{{ url('/about') }}">About</a></li>
+								<li><a href="{{ url('/contact') }}">Contact</a></li>
+								<li>
+									<a href="{{ url('/register') }}">Register</a>
+								</li>
 							</ul>
 						</nav>
 					</div>

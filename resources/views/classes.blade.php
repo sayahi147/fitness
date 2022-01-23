@@ -71,15 +71,15 @@
 				<div class="container">
 					<div class="nav-header">
 						<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-						<h1 id="fh5co-logo"><a href="{{ url('/')  }}">Fit<span>ness</span></a></h1>
+						<h1 id="fh5co-logo"><a href="{{  url('/')  }}">Fit<span>ness</span></a></h1>
 						<!-- START #fh5co-menu-wrap -->
 						<nav id="fh5co-menu-wrap" role="navigation">
 							<ul class="sf-menu" id="fh5co-primary-menu">
 								<li>
-									<a href="{{ url('/')  }}">Home</a>
+									<a href="{{  url('/')  }}">Home</a>
 								</li>
-								<li>
-									<a href="classes.html" class="fh5co-sub-ddown">Classes</a>
+								<li class="active">
+									<a href="{{  url('/classes')  }}" class="fh5co-sub-ddown">Classes</a>
 									 <ul class="fh5co-sub-menu">
 									 	<li><a href="left-sidebar.html">Web Development</a></li>
 									 	<li><a href="right-sidebar.html">Branding &amp; Identity</a></li>
@@ -99,11 +99,11 @@
 										<li><a href="#">Photography</a></li> 
 									</ul>
 								</li>
-								<li>
+						       <li>
 									<a href="{{ url('/schedule') }}">Schedule</a>
 								</li>
 								<li><a href="{{ url('/trainers') }}">Trainers</a></li>
-								<li><a href="{{ url('/about') }}">About</a></li>
+								<li><a href="{{ url('/about')  }}">About</a></li>
 								<li><a href="{{ url('/contact') }}">Contact</a></li>
 								<li>
 									<a href="{{ url('/register') }}">Register</a>
@@ -115,13 +115,13 @@
 			</header>		
 		</div>
 		<!-- end:fh5co-header -->
-		<div class="fh5co-parallax" style="background-image: url(images/home-image-5.jpg);" data-stellar-background-ratio="0.5">
+		<div class="fh5co-parallax" style="background-image: url(images/home-image-2.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
 						<div class="fh5co-intro fh5co-table-cell animate-box">
-							<h1 class="text-center">Schedule</h1>
+							<h1 class="text-center">Classes</h1>
 							<p>Made with love by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></p>
 						</div>
 					</div>
@@ -129,6 +129,68 @@
 			</div>
 		</div><!-- end: fh5co-parallax -->
 		<!-- end:fh5co-hero -->
+		<div id="fh5co-programs-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="heading-section text-center animate-box">
+							<h2>Our Programs</h2>
+							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="images/fit-dumbell.svg" alt="Cycling">
+							<h3>Body Combat</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+							<span><a href="#" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="images/fit-yoga.svg" alt="">
+							<h3>Yoga Programs</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+							<span><a href="#" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="images/fit-cycling.svg" alt="">
+							<h3>Cycling Program</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+							<span><a href="#" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="images/fit-boxing.svg" alt="Cycling">
+							<h3>Boxing Fitness</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+							<span><a href="#" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="images/fit-swimming.svg" alt="">
+							<h3>Swimming Program</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+							<span><a href="#" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<div class="program animate-box">
+							<img src="images/fit-massage.svg" alt="">
+							<h3>Massage</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+							<span><a href="#" class="btn btn-default">Join Now</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div id="fh5co-schedule-section" class="fh5co-lightgray-section">
 			<div class="container">
 				<div class="row">
@@ -411,69 +473,6 @@
 
 						
 					</div>
-				</div>
-			</div>
-		</div>
-		<div id="fh5co-programs-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="heading-section text-center animate-box">
-							<h2>Our Programs</h2>
-							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row text-center">
-					<div class="col-md-4 col-sm-6">
-						<div class="program animate-box">
-							<img src="images/fit-dumbell.svg" alt="Cycling">
-							<h3>Body Combat</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							<span><a href="#" class="btn btn-default">Join Now</a></span>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="program animate-box">
-							<img src="images/fit-yoga.svg" alt="">
-							<h3>Yoga Programs</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							<span><a href="#" class="btn btn-default">Join Now</a></span>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="program animate-box">
-							<img src="images/fit-cycling.svg" alt="">
-							<h3>Cycling Program</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							<span><a href="#" class="btn btn-default">Join Now</a></span>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="program animate-box">
-							<img src="images/fit-boxing.svg" alt="Cycling">
-							<h3>Boxing Fitness</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							<span><a href="#" class="btn btn-default">Join Now</a></span>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="program animate-box">
-							<img src="images/fit-swimming.svg" alt="">
-							<h3>Swimming Program</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							<span><a href="#" class="btn btn-default">Join Now</a></span>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="program animate-box">
-							<img src="images/fit-massage.svg" alt="">
-							<h3>Massage</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-							<span><a href="#" class="btn btn-default">Join Now</a></span>
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</div>

@@ -31,3 +31,7 @@ Route::get('/trainers', function () {
 Route::get('/schedule', function () {
     return view('schedule');
 });
+
+Route::get('/classes', function () {
+    return view('classes');
+});
